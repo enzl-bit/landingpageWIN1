@@ -32,7 +32,6 @@
     <div class="text-center">
       <h1 class="text-4xl font-bold mb-4">OptimizeWin10</h1>
       <p class="mb-8 text-lg">Tool PowerShell aman & modern untuk mempercepat Windows 10, hapus bloatware, dan restore fitur penting.</p>
-      <a href="https://github.com/enzl-bit/OptimizeWIN10/archive/refs/tags/windows10.zip" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Download Sekarang</a>
     </div>
 
     <section class="mt-16">
@@ -52,7 +51,7 @@
     <section class="mt-12">
       <h2 class="text-2xl font-semibold mb-4">Cara Menggunakan</h2>
       <ol class="list-decimal list-inside space-y-2 text-gray-300">
-        <li>Download ZIP dari tombol di atas atau kunjungi GitHub.</li>
+        <li>Download ZIP dari tombol di bawah atau kunjungi GitHub.</li>
         <li>Ekstrak isi file ke folder mana saja.</li>
         <li>Jalankan file <code>OptimizeWin10.ps1</code> dengan klik kanan → "Run with PowerShell".</li>
         <li>Pilih profil optimasi sesuai kebutuhan Anda.</li>
@@ -62,11 +61,29 @@
     </section>
 
     <section class="mt-12">
+      <h2 class="text-2xl font-semibold mb-4">Keamanan & Tanda Tangan Digital</h2>
+      <p class="text-gray-400">
+        Setiap rilis tool ini telah ditandatangani menggunakan hash SHA256 agar Anda dapat memverifikasi integritas dan keasliannya.
+        File <code>signature.txt</code> yang disertakan di dalam arsip ZIP dapat digunakan untuk memastikan file tidak dimodifikasi.
+        Anda bisa menggunakan PowerShell untuk memverifikasi hash sebagai berikut:
+      </p>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded mt-4 overflow-x-auto text-sm">
+Get-FileHash OptimizeWin10.ps1 -Algorithm SHA256</pre>
+      <p class="text-gray-400 mt-4">
+        Cocokkan nilai hash dengan isi dari file <code>signature.txt</code>. Jangan jalankan file dari sumber yang tidak dikenal.
+      </p>
+    </section>
+
+    <section class="mt-12">
       <h2 class="text-2xl font-semibold mb-4">Disclaimer</h2>
       <p class="text-gray-400">
         OptimizeWin10 adalah alat open source yang ditujukan untuk pengguna berpengalaman. Meskipun telah diuji, penggunaan tool ini menjadi tanggung jawab pengguna sepenuhnya. Selalu backup sistem Anda sebelum melakukan perubahan besar.
       </p>
     </section>
+
+    <div class="text-center mt-16">
+      <a href="https://github.com/enzl-bit/OptimizeWIN10/archive/refs/tags/windows10.zip" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Download Sekarang</a>
+    </div>
   </main>
 
   <footer class="bg-gray-800 text-gray-400 text-center py-6 text-sm">
