@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://optimizewin10.vercel.app/sitemap.xml
+Sitemap: https://landingpage-win-1.vercel.app/sitemap.xml
